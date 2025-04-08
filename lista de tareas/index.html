@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head href="Font Awesome ">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        h1 {
+            color: #007bff;
+        }
+        #tareaInput {
+            padding: 10px;
+            width: 70%;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        #agregarBtn {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #agregarBtn:hover {
+            background-color: #0056b3;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #e7f1ff;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+        }
+        .completada {
+            text-decoration: line-through;
+            color: gray;
+        }
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #007bff;
+            margin-left: 10px;
+        }
+        button:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+    <input type="text" id="tareaInput" placeholder="Agregar nueva tarea">
+    <button id="agregarBtn">Agregar Tarea</button>
+    <ul id="tareasList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

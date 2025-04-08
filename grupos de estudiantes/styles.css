@@ -1,0 +1,94 @@
+/* styles.css */
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+#contenedorPrincipal {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+    transition: transform 0.3s;
+}
+
+/* Efecto de elevación al pasar el mouse */
+#contenedorPrincipal:hover {
+    transform: translateY(-5px);
+}
+
+/* Títulos */
+h1 {
+    color: #343a40;
+    text-align: center;
+    font-size: 24px;
+}
+
+h2 {
+    color: #495057;
+    margin-top: 20px;
+}
+
+/* Estilo del input de archivo */
+#archivoCSV {
+    display: block;
+    margin: 20px auto;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Estilo del botón */
+#botonCrearGrupos {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+}
+
+/* Efecto hover para el botón */
+#botonCrearGrupos:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Contenedor de resultados */
+#contenedorResultados {
+    margin-top: 20px;
+}
+
+/* Estilo para los grupos creados */
+#gruposContainer {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+}
+
+/* Estilo para los elementos de grupo */
+.grupo {
+    padding: 8px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.grupo:last-child {
+    border-bottom: none;
+}
